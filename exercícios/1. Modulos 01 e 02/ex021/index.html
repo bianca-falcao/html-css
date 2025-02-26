@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tipografia/Fontes</title>
+    <style>
+        /* importanto fontes internas
+        */
+       @font-face {
+        font-family: 'the genz'; /* de o nome que quiser para aplicar em outras estruturas*/
+        src: url('fonts/the genz.ttf') format(truetype), url('fonts/the genz.otf') format(opentype);
+       }
+       /*Tipos de format():
+       - opentype(otf)
+       - truetype(ttf)
+       - embedded-opentype
+       - truetyoe aat (Apple Advanced Typography)
+       - svg
+       */
+
+       /* Pode mesclar fontes internas e externas*/
+
+       body{
+        font-family: the genz, sans-serif;
+        h1{
+            text-align: center; /*alinhamento do texto*/
+        }
+        p{
+            text-align: left;
+            text-indent: 20px /*parágrafo*/
+        }
+        };
+       
+
+
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Site de Exemplo</h1>
+        <h2>Título 1</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, libero ab voluptatem eligendi totam ducimus possimus corrupti quis itaque earum perferendis illum reprehenderit harum commodi cum aperiam, sint hic magnam!</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem ipsum porro aut sapiente, nostrum, corrupti numquam vel autem tenetur maxime similique voluptatem. Ratione, similique possimus. At est hic laudantium neque.</p>
+        <h2>Título 2</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem reprehenderit, dignissimos tenetur modi quis, facere rerum dolore placeat accusantium, id quam recusandae dolor ad obcaecati odit perspiciatis! Ab, fugit sit!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab inventore, aliquam veritatis distinctio ex repudiandae. Quibusdam, eaque reprehenderit officia iusto, enim consequuntur quis explicabo hic aliquid ullam, inventore fugit alias.</p>
+    </main>
+</body>
+</html>

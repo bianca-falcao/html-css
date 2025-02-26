@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>Hyperlinks</title>
+</head>
+<body>
+    <h1>Usando links externos</h1>
+    <p>Essa frase tem um <a href="https://www.google.com">link</a> usando a tag &lt;a&gt; que significa âncora. Nessas configurações abrirá o link sobrepondo a janela do meu site.</p>
+    <br>
+    <p>Essa frase tem um <a href="https://www.google.com" target="_blank" rel="external">link</a> usando a tag&lt;a&gt; e os parâmetros target e rel que abrirá o link em uma nova guia sem sair do meu site.</p>
+
+    <h1>Links Internos</h1>
+    <p>Acesse a segunda página do site <a href="pag02.html" rel="prev">aqui</a></p> <!-- rel com prev ou next ajuda os mecanismos de busca a acessar corretamente as páginas-->
+
+    <p>Esse <a href="https://www.google.com.br" target="_blank" rel="nofollow">link</a> está configurado no parâmetro rel o "nofollow" que diz ao mecanismo de busca que você não da o aval para esse link externo. Útil para propagando e menções de terceiros sem vínculo com sua publicação</p>
+
+    <p>Esse <a href="pastateste/pag003.html" rel=next>link</a> leva à terceira página que está em uma subpasta</p>
+
+    <h1>Links para download</h1>
+    <p><a href="teste.pdf" download="teste.pdf" type="application/pdf" target="_blank" >Baixar pdf</a></p> <!-- Acessar lista de media types dos arquivos para inserir corretamente-->
+    <p><a href="teste.zip" download="teste.zip" type="application/zip">Baixar pasta compactada</a></p>
+</body>
+</html>

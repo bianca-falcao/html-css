@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagens que se adaptam (dinâmicas)</h1>
+        <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente ou diminua o tamanho da janela do seu navegador </p>
+        <picture>
+            <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png"> <!--Se o navegador tiver até 750px, carrega a imagem p. Ao utilizar o MAX-WIDTH comece do menor para o maior. no mín comece do maior e utilize como padrão o menor -->
+            <source media="(max-width:1050px)" srcset="imagens/foto-m.png" type="image/png"> <!--Se o navegador tiver até 1050px, carrega a imagem m -->
+            <img src="imagens/foto-g.png" alt="Imagem flexível"> <!-- Somente dessa forma o usuário em um dispositivo menor não terá uma imagem adaptada, aumentando o bounce rate (taxa de rejeição), fazendo com o google coloque o site em baixa prioridade nas buscas-->
+        </picture>
+        <h1>Reproduzindo audio</h1>
+        <p>A forma abaixo é simples porém é limitada em alguns navegadores</p>
+        <audio src="audios/audioteste.mp3" controls autoplay></audio>
+        
+        <p> Dessa forma, inserimos nessa ordem vários formatos de audio para que o carregador carregue o primeiro que funcionar (necessário ter os 3 formatos na pasta) dando a opção de baixar caso não seja possível ouvir áudio no navegador.
+            <audio preload="auto" autoplay controls> <!-- pode adicionar o comando loop para reproduzir novamente quando acabar -->
+                <source src="audios/audioteste.mp3" type="audio/mpeg">
+                <source src="audios/audioteste.mp3" type="audio/ogg">
+                <source src="audios/audioteste.mp3" type="audio/wav">
+                <p>Infelizmente, seu navegador não consegue reproduzir áudio. <a href="audios/audioteste.mp3" download="audioteste.mp3" type="audio/mpeg" target="_blank">Clique aqui para baixá-lo em MP3</a></p>
+            </audio>
+        </p>
+</body>
+</html>
